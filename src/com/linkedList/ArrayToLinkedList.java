@@ -10,7 +10,7 @@ public class ArrayToLinkedList {
         PrintingLinkedList.printList(head);
     }
 
-    private static ListNode createListFromArray(int[] arr) {
+    public static ListNode createListFromArray(int[] arr) {
         if(arr == null || arr.length<1 )return null;
 
         ListNode head = new ListNode(arr[0]);

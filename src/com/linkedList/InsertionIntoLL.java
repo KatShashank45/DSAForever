@@ -20,13 +20,13 @@ public class InsertionIntoLL {
 
     }
 
-    private static ListNode addAtHead (ListNode head , int val){
+    public static ListNode addAtHead (ListNode head , int val){
         ListNode node = new ListNode(val);
         node.next = head;
         return node;
     }
 
-    private static ListNode addBeforeElement (ListNode head , int val , int beforeWhich){
+    public static ListNode addBeforeElement (ListNode head , int val , int beforeWhich){
         if(head == null)return null;
         ListNode toAdd = new ListNode(val);
         if (head.val == beforeWhich) {
@@ -48,7 +48,7 @@ public class InsertionIntoLL {
 
     }
 
-    private static ListNode addAtTail (ListNode head , int val){
+    public static ListNode addAtTail (ListNode head , int val){
         ListNode toAdd = new ListNode(val);
         if(head == null)return toAdd;
         ListNode curr = head;
