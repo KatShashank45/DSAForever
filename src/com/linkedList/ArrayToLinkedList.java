@@ -7,7 +7,7 @@ public class ArrayToLinkedList {
         int[] arr = new int[]{23, 32, 43, 2, 324};
         ListNode head = createListFromArray(arr);
 
-        printList(head);
+        PrintingLinkedList.printList(head);
     }
 
     private static ListNode createListFromArray(int[] arr) {
@@ -22,13 +22,6 @@ public class ArrayToLinkedList {
         return head;
     }
 
-    public static void printList(ListNode head) {
 
-        while(head != null){
-            System.out.print(head.val + " ->");
-            head = head.next;
-        }
-        System.out.println("null");
-    }
 
 }
