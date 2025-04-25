@@ -16,7 +16,7 @@ public class InsertionIntoLL {
 
 
 
-        ArrayToLinkedList.printList(head);
+        PrintingLinkedList.printList(head);
 
     }
 
